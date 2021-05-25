@@ -33,7 +33,10 @@
       <div class="navbar-expand-md" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a role="button" class="btn btn-dark btn-sm text-white nav-link mx-1 px-2 mb-2 mb-md-0" target="_blank" href="/work/environment_builder.php?env=production">Build for Production</a>
+            <a role="button" class="btn btn-dark btn-sm text-white nav-link mx-1 px-2 mb-2 mb-md-0" target="_blank" href="/work/environment_builder.php?env=dev">Build for Development</a>
+          </li>
+          <li class="nav-item">
+            <a role="button" class="btn btn-dark btn-sm text-white nav-link mx-1 px-2 mb-2 mb-md-0" target="_blank" href="/work/environment_builder.php?env=prod">Build for Production</a>
           </li>
           <li class="nav-item">
             <a role="button" class="btn btn-dark btn-sm text-white nav-link mx-1 px-2 mb-2 mb-md-0" target="_blank" href="/work/config_builder.php">Config Builder</a>

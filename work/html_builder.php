@@ -65,7 +65,7 @@ try{
   
 
   // Get base file content
-  $html = file_get_html($baseHtmlFile, $use_include_path = false, $context = null, $offset = -1, $maxLen = -1, $lowercase = true, $forceTagsClosed = true, $target_charset = DEFAULT_TARGET_CHARSET, $stripRN = false, $defaultBRText = DEFAULT_BR_TEXT);
+  $html = file_get_html($baseHtmlFile, $use_include_path = false, $context = null, $offset = -1, $maxLen = -1, $lowercase = true, $forceTagsClosed = true,  $target_charset = DEFAULT_TARGET_CHARSET, $stripRN = false, $defaultBRText = DEFAULT_BR_TEXT);
 //   $baseHtmlFileContent = file_get_contents($baseHtmlFile);
   if($html === false) { throw new \Exception('Failed to read base html file'); }  
   
@@ -155,6 +155,15 @@ try{
     $ogSite_name = $html->find('[property="og:site_name"]');
     $ogSite_name[0]->content = $siteName;
 //     var_dump($test);die;
+    
+    $dflag = $html->getElementById('dflag');
+    if($env == 'dev') {
+      $dflag->innertext = "DEV";
+      $dflag->style = "position:absolute;top:8px;right:8px;color:#008BA0;font-weight:700;";
+    }else {
+      $dflag->innertext = "";
+      $dflag->style = "display:none;";
+    }
     
     $html->getElementById('siteurl')->innertext = "const siteUrl = '".$siteUrl."';";
     

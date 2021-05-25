@@ -85,9 +85,7 @@
     let that = this;	
     let dataObj = this.config[this.category][this.city];
     let globalObj = this.config.global[this.category];
-    console.log('config', this.config);
-    console.log('globalObj', globalObj);
-    console.log('cat', this.category);
+
     let heroTemplate = this.heroesTemplates[dataObj.hero.template];	
     let newHero = heroTemplate.cloneNode(true);	
     newHero = this.customizeHero(newHero, dataObj.hero, dataObj.definitions.location, dataObj.hero.template);	
