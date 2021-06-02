@@ -1,0 +1,759 @@
+        .whitecover{
+            position:fixed;
+            top:0;
+            bottom:0;
+            right:0;
+            left:0;
+            background-color:#ffffff;
+            z-index:999999;
+        }
+        
+        .compare-logo {
+            max-height: unset !important;
+        }
+
+body{
+    font-family: 'Open Sans', sans-serif !important;
+}
+.maincontainer{
+  max-width:720px;
+}
+.mainleftcontainer{
+  max-width:400px;
+}
+.lightpick{
+  max-width:720px;
+  margin: 0 auto;
+}
+/* colors */
+/*! CSS Used fontfaces */
+@font-face{font-family:"Font Awesome 5 Brands";font-style:normal;font-weight:normal;font-display:auto;src:url(/css/vendor/fontawesome-free/webfonts/fa-brands-400.eot);src:url(/css/vendor/fontawesome-free/webfonts/fa-brands-400.eot#iefix) format("embedded-opentype"),url(/css/vendor/fontawesome-free/webfonts/fa-brands-400.woff2) format("woff2"),url(/css/vendor/fontawesome-free/webfonts/fa-brands-400.woff) format("woff"),url(/css/vendor/fontawesome-free/webfonts/fa-brands-400.ttf) format("truetype"),url(/css/vendor/fontawesome-free/webfonts/fa-brands-400.svg#fontawesome) format("svg");}
+@font-face{font-family:"Font Awesome 5 Free";font-style:normal;font-weight:400;font-display:auto;src:url(/css/vendor/fontawesome-free/webfonts/fa-regular-400.eot);src:url(/css/vendor/fontawesome-free/webfonts/fa-regular-400.eot#iefix) format("embedded-opentype"),url(/css/vendor/fontawesome-free/webfonts/fa-regular-400.woff2) format("woff2"),url(/css/vendor/fontawesome-free/webfonts/fa-regular-400.woff) format("woff"),url(/css/vendor/fontawesome-free/webfonts/fa-regular-400.ttf) format("truetype"),url(/css/vendor/fontawesome-free/webfonts/fa-regular-400.svg#fontawesome) format("svg");}
+@font-face{font-family:"Font Awesome 5 Free";font-style:normal;font-weight:900;font-display:auto;src:url(/css/vendor/fontawesome-free/webfonts/fa-solid-900.eot);src:url(/css/vendor/fontawesome-free/webfonts/fa-solid-900.eot#iefix) format("embedded-opentype"),url(/css/vendor/fontawesome-free/webfonts/fa-solid-900.woff2) format("woff2"),url(/css/vendor/fontawesome-free/webfonts/fa-solid-900.woff) format("woff"),url(/css/vendor/fontawesome-free/webfonts/fa-solid-900.ttf) format("truetype"),url(/css/vendor/fontawesome-free/webfonts/fa-solid-900.svg#fontawesome) format("svg");}
+/*! CSS Used from: https://globaltrips.nettravel.io/css/vendor/fontawesome-free/css/all.min.css */
+.fab,.far,.fas{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;display:inline-block;font-style:normal;font-variant:normal;text-rendering:auto;line-height:1;}
+.fa-2x{font-size:2em;}
+.fa-angle-double-right:before{content:"\f101";}
+.fa-bars:before{content:"\f0c9";}
+.fa-bed:before{content:"\f236";}
+.fa-calendar-alt:before{content:"\f073";}
+.fa-check:before{content:"\f00c";}
+.fa-check-circle:before{content:"\f058";}
+.fa-clipboard:before{content:"\f328";}
+.fa-concierge-bell:before{content:"\f562";}
+.fa-exclamation-circle:before{content:"\f06a";}
+.fa-facebook-f:before{content:"\f39e";}
+.fa-hotel:before{content:"\f594";}
+.fa-hotjar:before{content:"\f3b1";}
+.fa-instagram:before{content:"\f16d";}
+.fa-question-circle:before{content:"\f059";}
+.fa-search:before{content:"\f002";}
+.fa-sun:before{content:"\f185";}
+.fa-twitter:before{content:"\f099";}
+.fa-user-circle:before{content:"\f2bd";}
+.sr-only{border:0;clip:rect(0,0,0,0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;}
+.fab{font-family:"Font Awesome 5 Brands";}
+.far{font-weight:400;}
+.far,.fas{font-family:"Font Awesome 5 Free";}
+.fas{font-weight:900;}
+
+.btn-primary {background-color: #008BA0;border-color: #008BA0;}
+.btn-primary:hover {background-color: #00CCF0;}
+.btn-primary:focus { background-color: #00CCF0;color: white;border-color: #00CCF0;}
+.btn-primary:active {background-color: #00CCF0 !important;}
+.btn-secondary {background-color: #00CCF0;}
+.btn-secondary:hover {background-color: #008BA0;}
+.btn-secondary:focus { background-color: #008BA0;color: white;}
+.btn-secondary:active {background-color: #008BA0 !important;}
+.bg-primary {background-color: #008BA0 !important;}
+.bg-secondary {background-color: #00CCF0 !important;}
+.text-primary {color: #008BA0 !important;}
+.text-secondary {color: #00CCF0 !important;}
+    .badge-primary{
+        background-color: #008BA0;
+    }
+    
+a.badge-primary:focus, a.badge-primary:hover {
+    color: #fff;
+    background-color: #00CCF0;
+}
+a.text-primary:focus, a.text-primary:hover {
+    color: #008BA0!important;
+}
+@media (min-width: 992px) {.projects-section .project-text hr { border-color: #008BA0;}}
+#mainNav .navbar-toggler {color: #008BA0;border: 1px solid #008BA0;}
+.navbar-toggler:focus {
+	outline: 2px solid rgba(0,0,0,.07) !important;
+}
+
+@media (min-width: 992px) {
+  #mainNav .nav-link:hover {background-color:#008BA0;}
+  #mainNav.navbar-shrink .nav-link:active {color: #008BA0;}
+  #mainNav.navbar-shrink .nav-link.active {color: #008BA0;border-bottom: 0.25rem solid #008BA0;}
+   #mainNav.navbar-shrink .nav-link {color: #00CCF0;}
+   #mainNav.navbar-shrink .nav-link.active {
+    color: #008BA0;
+    border-bottom: 0.25rem solid #008BA0;
+  }
+}
+a {color: #008BA0;}
+  .checkbox input + span, .radio input + span { background: #008BA0;}
+
+
+  /* // navbar */
+
+
+    .navbar-collapse {
+        position: fixed;
+        top: 61px;
+        left: 0;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 15px;
+        height: 100%;
+        z-index:100;
+    }
+
+    .navbar-collapse {
+        height: 100%;
+        left: -100%;
+        transition: left 150ms ease-in-out;
+    }
+
+    .navbar-collapse.show {
+        height: 100%;
+        left: 0;
+        transition: left 150ms ease-in-out;
+    }
+
+    /* .navbar-toggler.collapsed ~ .navbar-collapse {
+        transition: left 400ms ease-in;
+    } */
+
+    .featured-card{
+        box-shadow: 0px 0px 2px 0px rgba(25, 32, 36, 0.12), 0px 2px 4px 0px rgba(25, 32, 36, 0.22) !important;
+        border-radius: 2px !important;
+        border:none;
+        height: 192px !important;
+        cursor:pointer;
+    }
+    .navbar.landing-navbar-container{
+        justify-content: flex-start;
+        box-shadow: 0 3px 6px rgb(25 32 36 / 16%), 0 -1px 4px rgb(25 32 36 / 4%);
+        height:62px;
+    }
+    .search-form-container{
+        background-image:url('/img/search/spinner.gif');
+        background-size:cover;
+        background-position:center center;
+        background-repeat:no-repeat;
+
+    }
+    .perfect-checklist-container{
+        background-image:url('/img/search/spinner.gif');
+        background-size:cover;
+        background-position:center center;
+        background-repeat:no-repeat;
+
+    }
+    .search-form-input-icon{
+        min-width: 50px;
+    }
+    .search-form-input{
+        pointer-events:none;
+    }
+
+
+
+.form-card-title {
+    font-size: 2rem;
+    color: #212529;
+    font-weight: 900;
+    letter-spacing: -0.04em;
+}
+.tabs-card-title {
+    font-size: 1.3rem;
+    color: #212529;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+.checklist-card-title {
+    font-size: 2rem;
+    color: #212529;
+    font-weight: 900;
+    letter-spacing: -0.04em;
+    line-height: 1.2;
+}
+.compare-card-title{
+    font-size: 1rem;
+    color: #212529;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+.perfect-checklist-item{
+
+}
+.search-form-input,.search-form-input-city{
+    font-size:14px;
+}
+
+
+.tab-wrap-featured {
+  width: 100%;
+  position: relative;
+  display: flex;
+  border-bottom: 2px solid #dee2e6!important;
+  /* top: -106px; */
+}
+
+input[type=radio][name=ftabs] {
+  position: absolute;
+  z-index: -1;
+  display:none;
+}
+.tab-label-content-featured{
+    width:25%;
+}
+input[type=radio][name=ftabs]:checked + .tab-label-content-featured label {
+  /* color: white; */
+}
+input[type=radio][name=ftabs]:checked + .tab-label-content-featured .tab-content {
+  display: block;
+}
+input[type=radio][name=ftabs]:nth-of-type(1):checked ~ .slide-featured {
+  left: calc((100% / 4) * 0);
+}
+input[type=radio][name=ftabs]:nth-of-type(2):checked ~ .slide-featured {
+  left: calc((100% / 4) * 1);
+}
+input[type=radio][name=ftabs]:nth-of-type(3):checked ~ .slide-featured {
+  left: calc((100% / 4) * 2);
+}
+input[type=radio][name=ftabs]:nth-of-type(4):checked ~ .slide-featured {
+  left: calc((100% / 4) * 3);
+}
+input[type=radio][name=ftabs]:first-of-type:checked ~ .slide-featured {
+  left: 0;
+}
+
+.label-featured {
+  cursor: pointer;
+  color: #212529;
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 60px;
+  transition: color 0.2s ease;
+  width: 100%;
+  font-size:14px;
+  font-weight:700;
+  margin-bottom:0;
+}
+
+.slide-featured {
+  background: #00CCF0;
+  width: calc(100% / 4);
+  height: 2px;
+  position: absolute;
+  left: 0;
+  top: calc(100%);
+  transition: left 0.3s ease-out;
+}
+.card-img-top{
+    min-height: 0px !important;
+    object-fit: cover !important;
+}
+.heart-card{
+    /* padding:20px; */
+}
+.heart-top-text{
+    font-size:14px;
+}
+.heart-bottom-text{
+    font-size:12px;
+}
+.bg-black {
+    background-color: #161616 !important;
+}
+
+.faqCardHeaderHome{
+        border-bottom: 2px solid #00CCF0;
+        cursor:pointer;
+	}
+	.faqHeaderBtn{
+		font-size:16px;
+		text-decoration:none;
+		font-weight:700;
+		color:#008BA0;
+	}
+	.faqContainerHome{
+		max-width:740px;
+	}
+	.faqContainerHome .card-body{
+		font-size:12.8px;
+	}
+    .faqs-page-container [data-toggle="collapse"]:after {
+        font-family: 'Font Awesome 5 Free';
+            display: inline-block;
+            /* font: normal normal normal 14px/1 'Font Awesome 5 Free'; */
+            font-size: inherit;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        content: "\f054";
+        transform: rotate(90deg) ;
+        transition: all linear 0.25s;
+        float:right;
+        }   
+        .faqs-page-container [data-toggle="collapse"].collapsed:after {
+        transform: rotate(0deg) ;
+        }
+        .login-font-icon{
+            font-size:18px;
+        }
+.search-form-card{
+    box-shadow: 0 0 4px 0 rgb(19 26 31 / 12%), 0 4px 6px 0 rgb(19 26 31 / 22%);
+}
+.perfect-checklist-card{
+    box-shadow: 0 0 4px 0 rgb(19 26 31 / 12%), 0 4px 6px 0 rgb(19 26 31 / 22%);
+}
+.search-form-container-fixed{
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 50;
+    box-shadow: 0 0 2px 0 rgba(19,26,31,0.12),0 2px 4px 0 rgba(19,26,31,0.22)!important;
+}
+.bars-collapse-icon{
+    font-size:20px;
+    color:#212529;
+}
+/* --------------Lightpicker Overrides--------------------- */
+/* section.lightpick{margin-top:-60px;margin-left:-10px;margin-left:-10px;} */
+
+   .lightpick__day{
+     height:50px !important;
+     margin: 22px 0;
+   }
+  .lightpick {
+    position:fixed !important;
+    top:0 !important;
+    left:0 !important;
+    right:0 !important;
+    margin-top:0 !important;
+    bottom: 0 !important;
+    padding:15px !important;
+    z-index:999999;
+    display:block;
+    overflow: hidden; 
+  }
+  .lightpick__month{
+    padding:0 !important;
+    width:100% !important;
+  }
+  .lightpick.is-hidden {
+    display: none;
+}
+.noScroll {
+    overflow: hidden;
+    position:fixed;
+}
+  body.no-scroll {
+      overflow: hidden;
+      position:fixed;
+  }
+  .lightpick__day.skiptranslate.is-available.is-end-date,.lightpick__day.is-end-date.is-in-range, .lightpick__day.is-start-date.is-in-range.is-flipped, .lightpick__day.is-end-date.is-in-range.is-flipped, .lightpick__day.is-start-date.is-in-range {
+    border-radius: 0 !important;
+}
+.lightpick__day.skiptranslate.is-available.is-end-date, .lightpick__day.is-start-date.is-in-range, .lightpick__day.is-end-date.is-in-range {
+    background: #008BA0 !important;
+}
+.animated {
+    -webkit-animation-duration: 0.450s;
+    animation-duration: 0.450s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+.slideInDown {
+    -webkit-animation-name: slideInDown;
+    animation-name: slideInDown;
+}
+.slideOutUp {
+    -webkit-animation-name: slideOutUp;
+    animation-name: slideOutUp;
+}
+@keyframes slideOutUp{from{-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}100%{visibility:hidden;-webkit-transform:translate3d(0,-100%,0);transform:translate3d(0,-100%,0)}}
+@keyframes slideInDown{from{-webkit-transform:translate3d(0,-100%,0);transform:translate3d(0,-100%,0);visibility:visible}100%{-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}}
+
+.autocomplete-suggestions.bc-menu-top{
+    margin-top: -7px;
+    z-index:40;
+}
+.autocomplete-suggestions.bc-menu-modal{
+    margin-top: -7px;
+    top: 136px !important;
+    position:fixed !important;
+}
+
+.bc-menu::-webkit-scrollbar {
+    width: 5px;
+    transition: 250ms linear;
+}
+
+.bc-menu::-webkit-scrollbar-thumb {
+    background: #008BA0!important;
+}
+.bc-menu::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* compare */
+.compare-partners{
+    display: block;
+    background-color: #f5f5f6;
+    padding: 16px 8px 4px;
+    position: relative;
+    margin-right: 0px;
+    margin-left: 0px;
+    border-radius: 0;
+}
+.compare-partners .compare-partners-wrapper {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-align-items: center;
+    align-items: center;
+    margin: 0;
+    padding:0;
+}
+.partner-item{
+    height: 22px;
+    -webkit-flex-basis: auto;
+    flex-basis: auto;
+    width: calc(33.33333% - 24px);
+    margin: 8px;
+    -webkit-flex: 1 0 calc(33.33333% - 24px);
+    flex: 1 0 calc(33.33333% - 24px);
+    min-width: 85px;
+    height: 24px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+.compare-logo{
+    max-height: 22px;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+    max-width:100%;
+}
+.plus-more-text{
+    font-size:14px;
+}
+.free-trial-svg-div{
+  margin: 0 90px;
+}
+
+.form-group-start-free-trial:after {
+  content: '';
+  display: block;
+  margin: auto;
+  height: 3px;
+  width: 0px;
+  background: transparent;
+  transition: width .5s ease, background-color .5s ease;
+}
+.form-group-start-free-trial:hover:after {
+  width: 100%;
+  background: #008BA0;
+}
+.form-control:focus{
+    box-shadow: 0 0 0 0.2rem rgb(0 139 160 / 25%);
+}
+
+.free-trial-input{
+    border-bottom: 1px solid #008BA0!important;
+}
+
+
+
+/* new sections */
+
+/*! CSS Used from: https://globaltrips.com/app/css/globaltrips-login/css/grayscale.css */
+h1,h4{font-weight:900;letter-spacing:-0.04em;}
+.projects-section{padding:10rem 0;}
+.projects-section .project-text{padding:3rem;font-size:90%;}
+@media (min-width: 992px){
+.projects-section .project-text{padding:5rem;}
+.projects-section .project-text hr{border-color:#00d6b2;border-width:.25rem;width:30%;}
+}
+.bg-black{background-color:#161616!important;}
+.service-image{position:relative;}
+.service-image:before{content:'';position:absolute;background-image:url(https://www.transparenttextures.com/patterns/cubes.png);background-size:50px;background-repeat:repeat;z-index:1;top:0;left:0;height:100%;width:100%;opacity:0.3;}
+.service-image{background-size:cover;background-position:center center;min-height:250px;}
+/*! CSS Used from: Embedded */
+@media (min-width: 992px){
+.projects-section .project-text hr{border-color:#008BA0;}
+}
+
+.news-link{
+    pointer-events: none;
+}
+
+.text-shadow {text-shadow: 2px 2px 4px #222;}.text-shadow-sm {text-shadow: 1px 1px 1px #222;}
+
+/* parallax 3 */
+/*! CSS Used from: https://globaltrips.com/app/css/globaltrips-login/css/grayscale.css */
+h2{font-weight:900;letter-spacing:-0.04em;}
+.btn-big-cards{
+    -webkit-box-shadow:0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1)!important;
+    box-shadow:0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1)!important;
+    padding:1.25rem 2rem;
+    font-family:'Open Sans', sans-serif!important;
+    font-size:80%;
+    text-transform:uppercase;
+    letter-spacing:.15rem;
+    border:0;
+    }
+a{color:#00d6b2;}
+a:focus,a:hover{text-decoration:none;color:#3c6360;}
+/*! CSS Used from: Embedded */
+.bg-secondary{background-color:#00CCF0!important;}
+a{color:#008BA0;}
+.btn-outline-top{color:#ffffff!important;border-color:#ffffff!important;border:1px solid;}
+.btn-outline-top:hover{color:#008BA0!important;background-color:#fff!important;}
+.text-shadow-sm{text-shadow:1px 1px 1px #222;}
+/*! CSS Used from: Embedded */
+.parallax3{height:120px;background-attachment:fixed;background-position:center;background-repeat:no-repeat;background-size:cover;}
+.w-50{width:50%;}
+.flow-wrap{flex-flow:wrap;}
+
+/* parallax 2 */
+/*! CSS Used from: https://globaltrips.com/app/css/globaltrips-login/css/grayscale.css */
+h2{font-weight:900;letter-spacing:-0.04em;}
+a{color:#00d6b2;}
+a:focus,a:hover{text-decoration:none;color:#3c6360;}
+/*! CSS Used from: Embedded */
+.bg-secondary{background-color:#00CCF0!important;}
+a{color:#008BA0;}
+.btn-outline-top{color:#ffffff!important;border-color:#ffffff!important;border:1px solid;}
+.btn-outline-top:hover{color:#008BA0!important;background-color:#fff!important;}
+.text-shadow-sm{text-shadow:1px 1px 1px #222;}
+/*! CSS Used from: Embedded */
+.parallax2{height:120px;background-attachment:fixed;background-position:center;background-repeat:no-repeat;background-size:cover;}
+.w-50-sm-100{width:50%;}
+@media (max-width: 575px){
+.adventure-plan{font-size:24px;}
+}
+@media (max-width: 767px){
+.w-50-sm-100{width:100%;}
+}
+.break{width:100%;}
+.flow-wrap{flex-flow:wrap;}
+
+
+/* parallax 1  */
+/*! CSS Used from: https://globaltrips.com/app/css/globaltrips-login/css/grayscale.css */
+h2{font-weight:900;letter-spacing:-0.04em;}
+a{color:#00d6b2;}
+a:focus,a:hover{text-decoration:none;color:#3c6360;}
+/*! CSS Used from: Embedded */
+.bg-secondary{background-color:#00CCF0!important;}
+a{color:#008BA0;}
+.btn-outline-top{color:#ffffff!important;border-color:#ffffff!important;border:1px solid;}
+.btn-outline-top:hover{color:#008BA0!important;background-color:#fff!important;}
+.text-shadow-sm{text-shadow:1px 1px 1px #222;}
+/*! CSS Used from: Embedded */
+.parallax1{height:120px;background-attachment:fixed;background-position:center;background-repeat:no-repeat;background-size:cover;}
+.w-50-sm-100{width:50%;}
+@media (max-width: 767px){
+.w-50-sm-100{width:100%;}
+}
+.break{width:100%;}
+.flow-wrap{flex-flow:wrap;}
+
+/* news */
+
+/*! CSS Used from: https://globaltrips.com/app/css/globaltrips-login/css/grayscale.css */
+h1,h2{font-weight:900;letter-spacing:-0.04em;}
+a{color:#00d6b2;}
+a:focus,a:hover{text-decoration:none;color:#3c6360;}
+/*! CSS Used from: Embedded */
+.badge-primary{background-color:#008BA0;}
+a.badge-primary:focus,a.badge-primary:hover{color:#fff;background-color:#00CCF0;}
+a{color:#008BA0;}
+.news-container .h5{font-size:95%;}
+.news-container .h3.post-title{font-size:1.4rem;}
+/*! CSS Used from: Embedded */
+.b-0{bottom:0;}
+.bg-shadow{background:rgba(76, 76, 76, 0);background:-webkit-gradient(left top, left bottom, color-stop(0%, rgba(179, 171, 171, 0)), color-stop(49%, rgba(48, 48, 48, 0.37)), color-stop(100%, rgba(19, 19, 19, 0.8)));background:linear-gradient(to bottom, rgba(179, 171, 171, 0) 0%, rgba(48, 48, 48, 0.71) 49%, rgba(19, 19, 19, 0.8) 100%);filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313', GradientType=0 );}
+.top-indicator{right:0;top:1rem;bottom:inherit;left:inherit;margin-right:1rem;}
+.overflow{position:relative;overflow:hidden;}
+.zoom img{transition:all 0.2s linear;}
+.zoom:hover img{-webkit-transform:scale(1.1);transform:scale(1.1);}
+img{vertical-align:middle;}
+
+
+
+/* hero phone */
+
+/*! CSS Used from: https://globaltrips.nettravel.io/app/css/millennial.css?t=1584111062 */
+.btn{font-family:inherit!important;}
+/*! CSS Used from: Embedded */
+#hero-container{background-color:#008BA0;}
+#hero{width:100%;height:30vh;position:relative;}
+#hero-img{width:100%;height:100%;
+    background-image:url('/img/search/spinner.gif');
+    background-repeat:no-repeat;position:absolute;}
+#hero #hero-text{position:absolute;color:#ffffff;font-weight:700;}
+#hero-text #ever{padding:0 17px;padding-bottom:4px;background-color:#ffffff;color:#008BA0;}
+#search-btn:hover,#search-btn:active{background-color:#006f80!important;}
+@media (max-width: 575px){
+#hero-text #ever{padding:0 9px;}
+#hero-img{background-size:70%;right:12%;}
+#hero #hero-text{font-size:1.5em;top:25%;left:50%;}
+#search-btn{font-size:12px;}
+}
+@media (min-width: 576px) and (max-width:767px){
+#hero #hero-text{font-size:2em;top:25%;left:50%;}
+#hero-img{background-size:60%;right:7%;}
+}
+@media (min-width: 768px){
+#hero{height:50vh;}
+}
+@media (min-width: 768px) and (max-width: 991px){
+#hero #hero-text{font-size:2.7em;top:25%;left:54%;}
+#hero-img{background-size:60%;right:2%;}
+}
+@media (min-width: 992px){
+#hero #hero-text{font-size:3.5em;top:10%;left:54%;}
+#hero-img{background-size:45%;left:5%;}
+}
+
+
+/*! CSS Used from: https://globaltrips.nettravel.io/app/css/globaltrips-login/css/grayscale.css */
+.btn-share{
+    -webkit-box-shadow:0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1)!important;
+    box-shadow:0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1)!important;
+    font-family:'Open Sans', sans-serif!important;
+    font-size:80%;text-transform:uppercase;
+    letter-spacing:.15rem;border:0;
+    }
+
+
+    .carousel-item span.offers-span {
+	padding: 2px 4px;
+	background-color: #008BA0;
+	color: white;
+	margin-left: 2px;
+	border-radius: 2px;
+}
+
+.featured-card .featured-image-description .featured-hotel-title {
+	padding: 5px;
+	background-color: #008BA0;
+	color: white;
+	text-transform: uppercase;
+	width: 150px;
+    padding: .5rem!important;
+    border-bottom-right-radius:50px;
+    box-shadow: 0px 0px 3px 0px rgba(25, 32, 36, 0.12), 0px 2px 4px 0px rgba(25, 32, 36, 0.22) !important;
+}
+
+.featured-card .featured-image-savings {
+	bottom: 0;
+	right: 0;
+}
+
+.featured-card .featured-image-savings .savings-badge {
+	color: #008BA0;
+}
+
+.featured-card .featured-image-savings .savings-badge span {
+	font-size: 0.9em;
+	text-transform: uppercase;
+}
+
+.fw-300 {
+	font-weight: 300;
+}
+
+.fw-400 {
+	font-weight: 400;
+}
+
+.fw-900 {
+	font-weight: 900;
+}
+
+.navbar-collapse .nav-link i{
+    color: #8796a1;
+}
+.navbar-collapse .nav-link span{
+    color: #192024;
+}
+
+
+/*! CSS Used from: Embedded */
+#freeTrialOfferModal .updgradeMainModal-sectionTitle{color:#008BA0;font-size:30px;font-weight:900;letter-spacing:-0.05em;text-transform:uppercase;text-align:center;margin-top:20px;}
+#freeTrialOfferModal .price-gt-checklist{color:#008BA0;font-weight:700;font-size:32px;text-shadow:0px 0px 5px rgba(0, 0, 0, 0.2);letter-spacing:-0.05em;line-height:0.9;}
+#freeTrialOfferModal .price-gt-checklist-cross{font-size:32px;font-weight:700;color:#c0c0c0!important;text-shadow:none;}
+#freeTrialOfferModal .per-text{color:#008BA0;}
+#freeTrialOfferModal .updgradeMainModal-sectionTitle-gtchecklist{color:#008BA0;font-size:20px;font-weight:700;letter-spacing:-0.05em;text-transform:uppercase;text-align:center;margin-top:20px;}
+
+
+.no-webp .private-access-img-1, .no-js .private-access-img-1 {
+  background-image: url('/img/search/spinner.gif');
+}
+.webp .private-access-img-1 {
+  background-image: url('/img/search/spinner.gif');
+}
+
+.no-webp .private-access-img-2, .no-js .private-access-img-2 {
+  background-image: url('/img/search/spinner.gif');
+}
+.webp .private-access-img-2 {
+  background-image: url('/img/search/spinner.gif');
+}
+
+.no-webp .private-access-img-3, .no-js .private-access-img-3 {
+  background-image: url('/img/search/spinner.gif');
+}
+.webp .private-access-img-3 {
+  background-image: url('/img/search/spinner.gif');
+}
+
+.no-webp .travel-img-1, .no-js .travel-img-1 {
+  background-image: url('/img/search/spinner.gif');
+}
+.webp .travel-img-1 {
+  background-image: url('/img/search/spinner.gif');
+}
+
+.no-webp .travel-img-2, .no-js .travel-img-2 {
+  background-image: url('/img/search/spinner.gif');
+}
+.webp .travel-img-2 {
+  background-image: url('/img/search/spinner.gif');
+}
+
+.no-webp .travel-img-3, .no-js .travel-img-3 {
+  background-image: url('/img/search/spinner.gif');
+}
+.webp .travel-img-3 {
+  background-image: url('/img/search/spinner.gif');
+}
+.lightpickerCloseBtn{
+    position:fixed;
+    left:5px;
+    top:0px;
+    z-index:9999999;
+    font-size:26px;
+}
