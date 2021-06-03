@@ -13,7 +13,7 @@ $response['success'] = false;
 $response['data'] = [];
 // $response['data']['master_index_path'] = $masterIndexPath;
 $response['message'] = []; 
-$categoryArr = ['deals','offers'];
+$categoryArr = ['deals','offers','search'];
 
 if(empty($_GET['category']) || !in_array($_GET['category'], $categoryArr)){
   $response['success'] = false;
@@ -53,6 +53,13 @@ $baseHtmlFile = '/var/www/globaltrips_cdn_pages/work/base.html';
 if(isset($_GET['minified'])) {
   $baseHtmlFile = '/var/www/globaltrips_cdn_pages/work/base.min.html';
 }
+
+if($_GET['category'] == 'search'){
+  $baseDealsPath = '/var/www/globaltrips_cdn_pages/search/';
+  // $masterLocation = 'orlando'; // Using Orlando index as master
+  $baseHtmlFile = '/var/www/globaltrips_cdn_pages/work/base.search.min.html';
+}
+
 
 // $baseHtmlFileContent = '';
 $configJsonFile = '/var/www/globaltrips_cdn_pages/config.json';
@@ -95,6 +102,16 @@ try{
   $response['data']['locations_to_update'] = $dealsLocationsToUpdate;
   
 
+  
+  if($_GET['category'] == 'search'){
+    foreach($dealsLocationsToUpdate as $k=>$v){
+      file_put_contents($v['path'], $html);
+      $response['data']['locations_to_update'][$k]['updated'] = 1;
+    }
+    $response['success'] = true;
+    $response['message'] = 'Done for hotel search';
+    die(json_encode($response));
+  }
   
   
   // Update locations

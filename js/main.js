@@ -127,7 +127,7 @@
         
         if(bannerIdxToUse == 0){
           
-          newBanner = that.bannerMapTemplate2.cloneNode(true);
+          newBanner = that.bannerMapTemplate.cloneNode(true);
           if(typeof dataObj.banners[bannerIdxToUse].img !== 'undefined' && dataObj.banners[bannerIdxToUse].img != '') {
             newBanner.style.backgroundImage = 'url(\''+dataObj.banners[bannerIdxToUse].img+'\')';
             hasParallax = true;
@@ -142,7 +142,7 @@
         rowEl.append(newBanner);	
         bannerIdxToUse++;	
         if(hasParallax) {
-          that.initParallax('.template-offer-banner-map-2');
+          that.initParallax('.template-offer-banner-map');
         }
       }	
     });	
@@ -411,7 +411,7 @@
     document.cookie = name + "=" + value + expires + "; path=/";	
   }
   initParallax(selector, speed = -0.30 ) {
-    return;
+//     return;
     var parallax = document.querySelectorAll(selector);
   
     window.onscroll = function() {
@@ -419,7 +419,7 @@
         var windowYOffset = window.pageYOffset;
 //         if(windowYOffset > 1200) {
           let offset = windowYOffset * speed - i * 200;
-          var elBackgrounPos = "50% " + (offset + 385) + "px";
+          var elBackgrounPos = "50% " + (offset + 350) + "px";
           el.style.backgroundPosition = elBackgrounPos;
 //         }
         

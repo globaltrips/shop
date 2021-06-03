@@ -15,6 +15,7 @@ $response['debug']['base_url'] = $baseUrl;
 
 $offersHtmlBuilderUrl = $baseUrl.'/work/html_builder.php?category=offers&updateBaseConfigHtml&build='.$env.'&minified';
 $dealsHtmlBuilderUrl = $baseUrl.'/work/html_builder.php?category=deals&updateBaseConfigHtml&build='.$env.'&minified';
+$searchHtmlBuilderUrl = $baseUrl.'/work/html_builder.php?category=search&build='.$env;
 $configBuilderUrl = $baseUrl.'/work/config_builder.php?build='.$env;
 
 // update config builder first
@@ -43,6 +44,7 @@ if (!$dealsHtml['success']) {
   die(json_encode($response));
 }
 
+$response['data']['search_html_builder'] = $searchHtml = json_decode(file_get_contents($searchHtmlBuilderUrl), true);
 
 // we're good at this point
 $response['success'] = true;

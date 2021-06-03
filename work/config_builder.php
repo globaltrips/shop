@@ -183,7 +183,7 @@ $config['deals']['orlando'] = [
       'title' => 'Search Orlando',
       'description' => '',
       'button' => 'SEARCH NOW', 
-      'img' => '/img/offers/orlando/orlando-360-150.png',
+      'img' => '/img/club/us-parallax.png',
     ],
     [
       'title' => $config['counts']['hotels']['orlando'].' Orlando Hotels',
@@ -358,7 +358,7 @@ $config['deals']['myrtle-beach'] = [
       'title' => 'Search Myrtle Beach',
       'description' => '',
       'button' => 'SEARCH NOW',
-      'img' => '/img/offers/myrtle-beach/myrtle-beach-360-150.png',
+      'img' => '/img/club/us-parallax.png',
     ],
     [
       'title' => $config['counts']['hotels']['myrtle-beach'].' Myrtle Beach Hotels',
@@ -534,7 +534,7 @@ $config['deals']['gatlinburg'] = [
       'title' => 'Search Gatlinburg',
       'description' => '',
       'button' => 'SEARCH NOW', 
-      'img' => '/img/offers/gatlinburg/gatlinburg-360-150.png',
+      'img' => '/img/club/us-parallax.png',
     ],
     [
       'title' => $config['counts']['hotels']['gatlinburg'].' Gatlinburg Hotels',
@@ -709,7 +709,7 @@ $config['deals']['williamsburg'] = [
       'title' => 'Search Williamsburg',
       'description' => '',
       'button' => 'SEARCH NOW', 
-      'img' => '/img/offers/williamsburg/williamsburg-360-150.png',      
+      'img' => '/img/club/us-parallax.png',      
     ],
     [
       'title' => $config['counts']['hotels']['williamsburg'].' Williamsburg Hotels',
@@ -884,7 +884,7 @@ $config['deals']['los-angeles'] = [
       'title' => 'Search Los Angeles',
       'description' => '',
       'button' => 'SEARCH NOW', 
-      'img' => '/img/offers/los-angeles/los-angeles-360-150.png',      
+      'img' => '/img/club/us-parallax.png',     
     ],
     [
       'title' => $config['counts']['hotels']['los-angeles'].' Los Angeles Hotels',
@@ -1058,7 +1058,7 @@ $config['deals']['cancun'] = [
       'title' => 'Search Cancun',
       'description' => '',
       'button' => 'SEARCH NOW', 
-      'img' => '/img/offers/cancun/cancun-360-150.png',      
+      'img' => '/img/club/us-parallax.png',     
     ],
     [
       'title' => $config['counts']['hotels']['cancun'].' Canc&uacute;n Hotels',
@@ -1232,7 +1232,7 @@ $config['deals']['san-francisco'] = [
       'title' => 'Search San Francisco',
       'description' => '',
       'button' => 'SEARCH NOW',
-      'img' => '/img/offers/san-francisco/san-francisco-360-150.png',      
+      'img' => '/img/club/us-parallax.png',     
     ],
     [
       'title' => $config['counts']['hotels']['san-francisco'].' San Francisco Hotels',
@@ -1407,7 +1407,7 @@ $config['deals']['new-york'] = [
       'title' => 'Search New York',
       'description' => '',
       'button' => 'SEARCH NOW', 
-      'img' => '/img/offers/new-york/new-york-360-150.png',      
+      'img' => '/img/club/us-parallax.png',     
     ],
     [
       'title' => $config['counts']['hotels']['new-york'].' New York Hotels',
@@ -1581,7 +1581,7 @@ $config['deals']['phoenix'] = [
       'title' => 'Search Phoenix',
       'description' => '',
       'button' => 'SEARCH NOW',
-      'img' => '/img/offers/phoenix/phoenix-360-150.png',      
+      'img' => '/img/club/us-parallax.png',     
     ],
     [
       'title' => $config['counts']['hotels']['phoenix'].' Phoenix Hotels',
@@ -1755,7 +1755,7 @@ $config['deals']['new-orleans'] = [
       'title' => 'Search New Orleans',
       'description' => '',
       'button' => 'SEARCH NOW', 
-      'img' => '/img/offers/new-orleans/new-orleans-360-150.png',      
+      'img' => '/img/club/us-parallax.png',     
     ],
     [
       'title' => $config['counts']['hotels']['new-orleans'].' New Orleans Hotels',
@@ -1975,7 +1975,7 @@ $config['offers']['orlando'] = [
       'title' => 'Search Orlando',
       'description' => '',
       'button' => 'SEARCH NOW', 
-      'img' => '/img/offers/orlando/orlando-360-150.png',
+      'img' => '/img/club/us-parallax.png',
     ],
     [
       'title' => $config['counts']['hotels']['orlando'].' Orlando Hotels',
@@ -2150,7 +2150,7 @@ $config['offers']['myrtle-beach'] = [
       'title' => 'Search Myrtle Beach',
       'description' => '',
       'button' => 'SEARCH NOW',
-      'img' => '/img/offers/myrtle-beach/myrtle-beach-360-150.png',
+      'img' => '/img/club/us-parallax.png',
     ],
     [
       'title' => $config['counts']['hotels']['myrtle-beach'].' Myrtle Beach Hotels',
@@ -2326,7 +2326,7 @@ $config['offers']['gatlinburg'] = [
       'title' => 'Search Gatlinburg',
       'description' => '',
       'button' => 'SEARCH NOW', 
-      'img' => '/img/offers/gatlinburg/gatlinburg-360-150.png',
+      'img' => '/img/club/us-parallax.png',
     ],
     [
       'title' => $config['counts']['hotels']['gatlinburg'].' Gatlinburg Hotels',
@@ -2501,7 +2501,7 @@ $config['offers']['williamsburg'] = [
       'title' => 'Search Williamsburg',
       'description' => '',
       'button' => 'SEARCH NOW', 
-      'img' => '/img/offers/williamsburg/williamsburg-360-150.png',      
+      'img' => '/img/club/us-parallax.png',      
     ],
     [
       'title' => $config['counts']['hotels']['williamsburg'].' Williamsburg Hotels',
@@ -2676,7 +2676,7 @@ $config['offers']['los-angeles'] = [
       'title' => 'Search Los Angeles',
       'description' => '',
       'button' => 'SEARCH NOW', 
-      'img' => '/img/offers/los-angeles/los-angeles-360-150.png',      
+      'img' => '/img/club/us-parallax.png',     
     ],
     [
       'title' => $config['counts']['hotels']['los-angeles'].' Los Angeles Hotels',
@@ -2850,7 +2850,7 @@ $config['offers']['cancun'] = [
       'title' => 'Search Cancun',
       'description' => '',
       'button' => 'SEARCH NOW', 
-      'img' => '/img/offers/cancun/cancun-360-150.png',      
+      'img' => '/img/club/us-parallax.png',     
     ],
     [
       'title' => $config['counts']['hotels']['cancun'].' Canc&uacute;n Hotels',
@@ -3024,7 +3024,7 @@ $config['offers']['san-francisco'] = [
       'title' => 'Search San Francisco',
       'description' => '',
       'button' => 'SEARCH NOW',
-      'img' => '/img/offers/san-francisco/san-francisco-360-150.png',      
+      'img' => '/img/club/us-parallax.png',      
     ],
     [
       'title' => $config['counts']['hotels']['san-francisco'].' San Francisco Hotels',
@@ -3199,7 +3199,7 @@ $config['offers']['new-york'] = [
       'title' => 'Search New York',
       'description' => '',
       'button' => 'SEARCH NOW', 
-      'img' => '/img/offers/new-york/new-york-360-150.png',      
+      'img' => '/img/club/us-parallax.png',      
     ],
     [
       'title' => $config['counts']['hotels']['new-york'].' New York Hotels',
@@ -3373,7 +3373,7 @@ $config['offers']['phoenix'] = [
       'title' => 'Search Phoenix',
       'description' => '',
       'button' => 'SEARCH NOW',
-      'img' => '/img/offers/phoenix/phoenix-360-150.png',      
+      'img' => '/img/club/us-parallax.png',     
     ],
     [
       'title' => $config['counts']['hotels']['phoenix'].' Phoenix Hotels',
@@ -3547,7 +3547,7 @@ $config['offers']['new-orleans'] = [
       'title' => 'Search New Orleans',
       'description' => '',
       'button' => 'SEARCH NOW', 
-      'img' => '/img/offers/new-orleans/new-orleans-360-150.png',      
+      'img' => '/img/club/us-parallax.png',     
     ],
     [
       'title' => $config['counts']['hotels']['new-orleans'].' New Orleans Hotels',
@@ -3694,6 +3694,9 @@ $config['offers']['new-orleans'] = [
   ],
 ];
 
+// search
+$config['search'] = [];
+$config['search']['hotels'] = [];
 
 // Add Hashed params
 // foreach(($config['deals'] ?? []) as $k => $v) {
